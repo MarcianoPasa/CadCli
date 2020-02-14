@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_de_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pasa.cadcli.activity.CadastroDeClienteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Nome:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewNome"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/editTextNome"
+                    android:maxLength="256" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Rua:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewRua"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/editTextRua"
+                    android:maxLength="256" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Nro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewNumero"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/editTextNumero"
+                    android:maxLength="15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Comple.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewComplemento"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/editTextComplemento"
+                    android:maxLength="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="CEP:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCEP"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextCEP"
+                    android:maxLength="8" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Bairro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBairro"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/editTextBairro"
+                    android:maxLength="40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCidade"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/editTextCidade"
+                    android:maxLength="80"
+                    android:selectAllOnFocus="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="UF:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUF"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUFs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Fone 1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone1"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <TextView
+                    android:text="("
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone1Parenteses1"
+                    android:layout_weight="0.00"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:id="@+id/editTextFone1DDD"
+                    android:maxLength="2"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text=")"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone1Parenteses2"
+                    android:layout_weight="0.00"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:id="@+id/editTextFone1Parte1"
+                    android:maxLength="5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone1Digito1"
+                    android:layout_weight="0.00"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:id="@+id/editTextFone1Parte2"
+                    android:maxLength="5"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="Fone 2:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone2"
+                    android:layout_weight="0.00"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <TextView
+                    android:text="("
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone2Parenteses1"
+                    android:layout_weight="0.00"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:id="@+id/editTextFone2DDD"
+                    android:maxLength="2"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text=")"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone2Parenteses2"
+                    android:layout_weight="0.00"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:id="@+id/editTextFone2Parte1"
+                    android:maxLength="5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFone2Digito1"
+                    android:layout_weight="0.00"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:id="@+id/editTextFone2Parte2"
+                    android:maxLength="5"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

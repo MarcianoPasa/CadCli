@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pasa.cadcli.MainActivity">
+
+    <item
+        android:id="@+id/action_cadastro_de_clientes"
+        android:orderInCategory="100"
+        android:title="Cadastro de clientes"
+        android:icon="@drawable/plus"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="200"
+        android:title="Lista de clientes"
+        android:icon="@drawable/list"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_configuracoes"
+        android:orderInCategory="300"
+        android:title="Configurações"
+        android:icon="@drawable/settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_excluir_clientes"
+        android:orderInCategory="400"
+        android:title="Excluir clientes"
+        app:showAsAction="never" />
+</menu>

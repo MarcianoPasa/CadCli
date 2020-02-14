@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pasa.cadcli.fragments.ListaDeClientesFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayoutListaDeClientes">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutBotoes"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonExcluir"
+                android:text="Excluir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:text="Cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewListaDeClientes" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

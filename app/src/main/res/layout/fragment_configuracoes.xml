@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pasa.cadcli.fragments.ConfiguracoesFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutConfiguracoes" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="UF:"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUF"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUFs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="UF padrão:"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUF"
+                    android:textSize="18sp"
+                    android:width="78dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUFs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="Cidade padrão:"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCidade"
+                android:textSize="18sp"
+                android:width="78dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords|textCapSentences"
+                android:ems="10"
+                android:id="@+id/editTextCidade"
+                android:maxLength="80" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
